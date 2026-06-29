@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="opencode" agent="architecture-medikamente" version="25.0.3">
+  <diagram name="01. Запись пациента к специалисту (To-Be)">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />        <object placeholders="1" c4Name="Пациент" c4Type="Person" c4Description="Клиент" id="pat">
+          <mxCell value="Пациент&lt;br&gt;&lt;small&gt;Клиент&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="220" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Администратор" c4Type="Person" c4Description="Сотрудник ресепшена" id="rec">
+          <mxCell value="Администратор&lt;br&gt;&lt;small&gt;Сотрудник ресепшена&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="450" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Врач" c4Type="Person" c4Description="Медицинский специалист" id="doc">
+          <mxCell value="Врач&lt;br&gt;&lt;small&gt;Медицинский специалист&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="620" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Портал пациента" c4Type="Process" c4Description="Самостоятельная запись" id="portal">
+          <mxCell value="Портал пациента&lt;br&gt;&lt;small&gt;Самостоятельная запись&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="250" y="450" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="API Gateway" c4Type="Process" c4Description="Аутентификация и роутинг" id="gw">
+          <mxCell value="API Gateway&lt;br&gt;&lt;small&gt;Аутентификация и роутинг&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="450" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Сервис записи" c4Type="Process" c4Description="Управление расписанием" id="appsvc">
+          <mxCell value="Сервис записи&lt;br&gt;&lt;small&gt;Управление расписанием&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="650" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Сервис уведомлений" c4Type="Process" c4Description="Напоминания" id="notif">
+          <mxCell value="Сервис уведомлений&lt;br&gt;&lt;small&gt;Напоминания&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="650" y="300" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="PostgreSQL" c4Type="Store" c4Description="Зашифрованная БД (TDE)" id="db">
+          <mxCell value="PostgreSQL&lt;br&gt;&lt;small&gt;Зашифрованная БД (TDE)&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="870" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="s1" value="&lt;b&gt;[SEC] TLS 1.3&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="30" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="&lt;b&gt;[SEC] OAuth2 / OIDC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="250" y="300" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;b&gt;[SEC] RBAC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="650" y="500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="&lt;b&gt;[SEC] Audit Log&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="870" y="300" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="&lt;b&gt;[TAG] PII&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;fontColor=#2E7D32;strokeColor=#66BB6A;" parent="1" vertex="1">
+          <mxGeometry x="770" y="210" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="&lt;b&gt;[TAG] MEDICAL&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;fontColor=#2E7D32;strokeColor=#66BB6A;" parent="1" vertex="1">
+          <mxGeometry x="770" y="250" width="130" height="25" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запись через портал [HTTPS]" c4Technology="" id="e1">
+          <mxCell value="Запись через портал [HTTPS] [TLS 1.3, WAF]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pat" target="portal" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запрос" c4Technology="" id="e2">
+          <mxCell value="Запрос [mTLS, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="portal" target="gw" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Создать запись" c4Technology="" id="e3">
+          <mxCell value="Создать запись [mTLS, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="gw" target="appsvc" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Данные + теги" c4Technology="" id="e4">
+          <mxCell value="Данные + теги [AES-256 at rest, теги PII/SENSITIVITY]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="appsvc" target="db" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запустить напоминание" c4Technology="" id="e5">
+          <mxCell value="Запустить напоминание [mTLS]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="db" target="notif" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Уведомление [Push/SMS]" c4Technology="" id="e6">
+          <mxCell value="Уведомление [Push/SMS] [TLS 1.3, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="notif" target="pat" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Уведомление" c4Technology="" id="e7">
+          <mxCell value="Уведомление [TLS 1.3, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="notif" target="doc" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Ручной ввод" c4Technology="" id="e8">
+          <mxCell value="Ручной ввод [TLS 1.3, RBAC, тегирование]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="rec" target="portal" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

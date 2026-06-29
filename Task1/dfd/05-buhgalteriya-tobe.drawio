@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="opencode" agent="architecture-medikamente" version="25.0.3">
+  <diagram name="05. Бухгалтерия (To-Be)">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />        <object placeholders="1" c4Name="Бухгалтер" c4Type="Person" c4Description="Сотрудник бухгалтерии" id="acc">
+          <mxCell value="Бухгалтер&lt;br&gt;&lt;small&gt;Сотрудник бухгалтерии&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="220" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Аналитик" c4Type="Person" c4Description="IT-отдел" id="analyst">
+          <mxCell value="Аналитик&lt;br&gt;&lt;small&gt;IT-отдел&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="500" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="1C:Бухгалтерия" c4Type="Store" c4Description="Серверный режим (TDE)" id="acc1c">
+          <mxCell value="1C:Бухгалтерия&lt;br&gt;&lt;small&gt;Серверный режим (TDE)&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="750" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Data Lake (ClickHouse)" c4Type="Store" c4Description="Обезличенные данные" id="datalake">
+          <mxCell value="Data Lake (ClickHouse)&lt;br&gt;&lt;small&gt;Обезличенные данные&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="750" y="500" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="ФНС" c4Type="External" c4Description="Налоговая служба" id="fts">
+          <mxCell value="ФНС&lt;br&gt;&lt;small&gt;Налоговая служба&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="750" y="300" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BI-сервис" c4Type="Process" c4Description="Отчёты на обезл. данных" id="bi">
+          <mxCell value="BI-сервис&lt;br&gt;&lt;small&gt;Отчёты на обезл. данных&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="500" y="500" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="s1" value="&lt;b&gt;[SEC] TLS 1.3&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="30" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="&lt;b&gt;[SEC] Динамическое маскирование&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="500" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;b&gt;[SEC] Псевдонимизация PII&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="500" y="300" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="&lt;b&gt;[SEC] Audit Vault&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="500" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="&lt;b&gt;[TAG] FINANCIAL&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;fontColor=#2E7D32;strokeColor=#66BB6A;" parent="1" vertex="1">
+          <mxGeometry x="650" y="200" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="&lt;b&gt;[TAG] ANONYMIZED&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;fontColor=#2E7D32;strokeColor=#66BB6A;" parent="1" vertex="1">
+          <mxGeometry x="650" y="400" width="130" height="25" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" c4Description="Первичные документы" c4Technology="" id="e1">
+          <mxCell value="Первичные документы [TLS 1.3, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="acc" target="acc1c" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Отчётность [TLS]" c4Technology="" id="e2">
+          <mxCell value="Отчётность [TLS] [TLS 1.3, ЭЦП]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="acc1c" target="fts" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="ETL-выгрузка [mTLS]" c4Technology="" id="e3">
+          <mxCell value="ETL-выгрузка [mTLS] [mTLS, обезличивание PII]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="acc1c" target="datalake" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Обезличенные данные" c4Technology="" id="e4">
+          <mxCell value="Обезличенные данные [анонимизация, маскирование]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="datalake" target="bi" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запрос отчёта" c4Technology="" id="e5">
+          <mxCell value="Запрос отчёта [RBAC, audit log]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="analyst" target="bi" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
