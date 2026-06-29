@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="opencode" agent="architecture-medikamente" version="25.0.3">
+  <diagram name="06. Лаборатория (As-Is)" id="dfd_06. Лаборатория (As-Is)">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />        <object placeholders="1" c4Name="06. Лаборатория (As-Is)" c4Type="DFD" c4Application="As-Is DFD" id="title">
+          <mxCell value="06. Лаборатория (As-Is)" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=top;resizable=0;points=[];fillColor=none;strokeColor=none;fontColor=#333333;" parent="1" vertex="1">
+            <mxGeometry x="20" y="10" width="800" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Врач" c4Type="Person" c4Description="Медицинский специалист" id="p1">
+          <mxCell value="Врач&lt;br&gt;&lt;small&gt;Медицинский специалист&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="50" y="250" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Выдача направления" c4Type="Process" c4Description="Оформление направления на анализы" id="pr1">
+          <mxCell value="Выдача направления&lt;br&gt;&lt;small&gt;Оформление направления на анализы&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="350" y="80" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Обработка результатов" c4Type="Process" c4Description="Ручной ввод результатов" id="pr2">
+          <mxCell value="Обработка результатов&lt;br&gt;&lt;small&gt;Ручной ввод результатов&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="350" y="400" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Направления.xlsx" c4Type="Журнал направлений" c4Description="" id="s1">
+          <mxCell value="Направления.xlsx&lt;br&gt;&lt;small&gt;Журнал направлений&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="80" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Результаты анализов.pdf" c4Type="Сканы результатов" c4Description="" id="s2">
+          <mxCell value="Результаты анализов.pdf&lt;br&gt;&lt;small&gt;Сканы результатов&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="400" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Лаборатория" c4Type="Внешняя лаборатория" c4Description="" id="s3">
+          <mxCell value="Лаборатория&lt;br&gt;&lt;small&gt;Внешняя лаборатория&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="250" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Выдача направления пациенту" c4Technology="" id="a1">
+          <mxCell value="Выдача направления пациенту [бумага, нет контроля]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="p1" target="pr1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запись в журнал направлений" c4Technology="" id="a2">
+          <mxCell value="Запись в журнал направлений [Excel, нет защиты]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr1" target="s1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Передача биоматериала" c4Technology="" id="a3">
+          <mxCell value="Передача биоматериала [курьер, нет шифрования]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr1" target="s3" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Результаты (PDF/бумага)" c4Technology="" id="a4">
+          <mxCell value="Результаты (PDF/бумага) [PDF/email, нет шифрования in transit]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="s3" target="pr2" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Ручной ввод/скан в медкарту" c4Technology="" id="a5">
+          <mxCell value="Ручной ввод/скан в медкарту [скан, нет аудита]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr2" target="s2" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Просмотр результатов" c4Technology="" id="a6">
+          <mxCell value="Просмотр результатов [общий доступ, нет RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="s2" target="p1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

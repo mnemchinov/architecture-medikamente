@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="opencode" agent="architecture-medikamente" version="25.0.3">
+  <diagram name="03. Оплата услуг (As-Is)" id="dfd_03. Оплата услуг (As-Is)">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />        <object placeholders="1" c4Name="03. Оплата услуг (As-Is)" c4Type="DFD" c4Application="As-Is DFD" id="title">
+          <mxCell value="03. Оплата услуг (As-Is)" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=top;resizable=0;points=[];fillColor=none;strokeColor=none;fontColor=#333333;" parent="1" vertex="1">
+            <mxGeometry x="20" y="10" width="800" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Пациент" c4Type="Person" c4Description="Клиент" id="p1">
+          <mxCell value="Пациент&lt;br&gt;&lt;small&gt;Клиент&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="50" y="200" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Кассир" c4Type="Person" c4Description="Сотрудник кассы" id="p2">
+          <mxCell value="Кассир&lt;br&gt;&lt;small&gt;Сотрудник кассы&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="350" y="80" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Расчёт стоимости" c4Type="Process" c4Description="Формирование счёта" id="pr1">
+          <mxCell value="Расчёт стоимости&lt;br&gt;&lt;small&gt;Формирование счёта&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="600" y="80" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Приём платежа" c4Type="Process" c4Description="Наличные/терминал" id="pr2">
+          <mxCell value="Приём платежа&lt;br&gt;&lt;small&gt;Наличные/терминал&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="600" y="300" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Оплаты.xlsx" c4Type="Журнал оплат" c4Description="" id="s1">
+          <mxCell value="Оплаты.xlsx&lt;br&gt;&lt;small&gt;Журнал оплат&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="850" y="80" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="1C:Бухгалтерия" c4Type="Файловый режим" c4Description="" id="s2">
+          <mxCell value="1C:Бухгалтерия&lt;br&gt;&lt;small&gt;Файловый режим&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="850" y="400" width="200" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запрос на оплату" c4Technology="" id="a1">
+          <mxCell value="Запрос на оплату [нет шифрования]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="p1" target="p2" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Расчёт стоимости услуг" c4Technology="" id="a2">
+          <mxCell value="Расчёт стоимости услуг [Excel, нет защиты]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="p2" target="pr1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Запись в журнал оплат" c4Technology="" id="a3">
+          <mxCell value="Запись в журнал оплат [Excel, нет аудита]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr1" target="s1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Передача данных в 1С" c4Technology="" id="a4">
+          <mxCell value="Передача данных в 1С [OLE, нет шифрования]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr1" target="s2" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Приём платежа (нал/терминал)" c4Technology="" id="a5">
+          <mxCell value="Приём платежа (нал/терминал) [нет шифрования канала]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="p2" target="pr2" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Выдача чека" c4Technology="" id="a6">
+          <mxCell value="Выдача чека [ККМ, нет защиты данных]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="pr2" target="p1" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

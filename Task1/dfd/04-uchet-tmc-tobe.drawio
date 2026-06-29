@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="opencode" agent="architecture-medikamente" version="25.0.3">
+  <diagram name="04. Учёт ТМЦ (To-Be)">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />        <object placeholders="1" c4Name="Кладовщик" c4Type="Person" c4Description="Сотрудник склада" id="keeper">
+          <mxCell value="Кладовщик&lt;br&gt;&lt;small&gt;Сотрудник склада&lt;/small&gt;" style="html=1;fontSize=11;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="30" y="220" width="160" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Сервис ТМЦ" c4Type="Process" c4Description="Управление запасами" id="invsvc">
+          <mxCell value="Сервис ТМЦ&lt;br&gt;&lt;small&gt;Управление запасами&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#ffffff;align=center;arcSize=20;strokeColor=#388E3C;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="400" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="PostgreSQL" c4Type="Store" c4Description="Инвентарная БД (шифр.)" id="db">
+          <mxCell value="PostgreSQL&lt;br&gt;&lt;small&gt;Инвентарная БД (шифр.)&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="80" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="1C:Торговля и склад" c4Type="Store" c4Description="Серверный режим" id="trade1c">
+          <mxCell value="1C:Торговля и склад&lt;br&gt;&lt;small&gt;Серверный режим&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="300" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="1C:Бухгалтерия" c4Type="Store" c4Description="Серверный режим" id="acc1c">
+          <mxCell value="1C:Бухгалтерия&lt;br&gt;&lt;small&gt;Серверный режим&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="700" y="500" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Поставщик" c4Type="External" c4Description="Внешний контрагент" id="supplier">
+          <mxCell value="Поставщик&lt;br&gt;&lt;small&gt;Внешний контрагент&lt;/small&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="400" y="400" width="200" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="s1" value="&lt;b&gt;[SEC] RBAC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="400" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="&lt;b&gt;[SEC] TLS 1.3&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;fontColor=#333;strokeColor=#DAA520;dashed=1;arcSize=10;" parent="1" vertex="1">
+          <mxGeometry x="30" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="&lt;b&gt;[TAG] INVENTORY&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;fontColor=#2E7D32;strokeColor=#66BB6A;" parent="1" vertex="1">
+          <mxGeometry x="600" y="200" width="130" height="25" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" c4Description="Приёмка ТМЦ" c4Technology="" id="e1">
+          <mxCell value="Приёмка ТМЦ [TLS 1.3, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="keeper" target="invsvc" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Сохранение в БД [mTLS]" c4Technology="" id="e2">
+          <mxCell value="Сохранение в БД [mTLS] [mTLS, AES-256 at rest]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="invsvc" target="db" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Синхронизация [TLS]" c4Technology="" id="e3">
+          <mxCell value="Синхронизация [TLS] [mTLS, шифрование]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="invsvc" target="trade1c" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Обмен [TLS]" c4Technology="" id="e4">
+          <mxCell value="Обмен [TLS] [TLS 1.3, ЭЦП]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="trade1c" target="acc1c" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Накладные, счета" c4Technology="" id="e5">
+          <mxCell value="Накладные, счета [TLS 1.3, RBAC]" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="supplier" target="invsvc" edge="1">
+            <mxGeometry width="240" relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
